@@ -1,9 +1,9 @@
-.titleCards {
+.titleCard {
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.titleCards h2 {
+.titleCard h2 {
     margin-bottom: 8px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .cardList img {
-    width: 150px;
+    width: 240px;
     border-radius: 4px;
     cursor: pointer;
 }
