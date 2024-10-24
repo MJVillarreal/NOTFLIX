@@ -3,10 +3,10 @@ import React from 'react'
 import './Navbar.css'
 
 import logo from '../../assets/netflix-logo.svg'
-import search_icon from '../../assets/search-icon.svg'
-import bell_icon from '../../assets/bell-icon.svg'
+import search_icon from '../../assets/icons/search-icon.svg'
+import bell_icon from '../../assets/icons/bell-icon.svg'
 import profile_picture from '../../assets/profile-picture.png'
-import dropdown_icon from '../../assets/dropdown.svg'
+import dropdown_icon from '../../assets/icons/dropdown.svg'
 
 
 

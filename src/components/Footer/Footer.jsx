@@ -2,10 +2,10 @@ import React from 'react'
 
 import './Footer.css'
 
-import youtube from '../../assets/youtube.svg'
-import instagram from '../../assets/Instagram.svg'
-import x from '../../assets/x.svg'
-import facebook from '../../assets/facebook.svg'
+import youtube from '../../assets/icons/youtube.svg'
+import instagram from '../../assets/icons/Instagram.svg'
+import x from '../../assets/icons/x.svg'
+import facebook from '../../assets/icons/facebook.svg'
 
 const Footer = () => {
   return (

@@ -7,8 +7,8 @@ import Footer from "../../components/Footer/Footer";
 
 import hero_banner from "../../assets/Hero-banner.webp";
 import hero_title from "../../assets/Hero-title.webp";
-import play_icon from "../../assets/play-icon.svg";
-import info_icon from "../../assets/info-icon.svg";
+import play_icon from "../../assets/icons/play-icon.svg";
+import info_icon from "../../assets/icons/info-icon.svg";
 import TitleCards from "../../components/TitleCards/TitleCards";
 
 const Home = () => {
@@ -26,12 +26,10 @@ const Home = () => {
           </p>
           <div className="heroButtons">
             <button className="button">
-              {" "}
               <img src={play_icon} />
               Play
             </button>
             <button className="button darkButton">
-              {" "}
               <img src={info_icon} />
               More Info
             </button>
