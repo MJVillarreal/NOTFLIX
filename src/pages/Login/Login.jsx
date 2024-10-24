@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./Login.css";
 
-import Logo from "../../assets/netflix-logo.svg";
+import Logo from "../../assets/logo.svg";
 
 const Login = () => {
   const [signState, setSignState] = useState("Sign In");
