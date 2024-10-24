@@ -2,12 +2,13 @@ import React, { useEffect, useRef } from "react";
 
 import "./Navbar.css";
 
+import logo from "../../assets/logo.svg";
 import search_icon from "../../assets/icons/search-icon.svg";
 import bell_icon from "../../assets/icons/bell-icon.svg";
 import profile_picture from "../../assets/profile-picture.png";
 import dropdown_icon from "../../assets/icons/dropdown.svg";
 
-import logo from "../../assets/logo.svg"
+import { logout } from "../../firebase";
 
 const Navbar = () => {
   const navRef = useRef();
@@ -43,7 +44,13 @@ const Navbar = () => {
           <img src={profile_picture} alt="" className="profile" />
           <img src={dropdown_icon} alt="" />
           <div className="dropdown">
-            <p>Sign out of Netflix</p>
+            <p
+              onClick={() => {
+                logout();
+              }}
+            >
+              Sign out of Netflix
+            </p>
           </div>
         </div>
       </div>

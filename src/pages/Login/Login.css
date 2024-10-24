@@ -34,12 +34,14 @@
     padding: 16px 20px;
     font-size: 16px;
     font-weight: 500;
+    color: white;
 }
 
-/* .loginForm input::placeholder {
+.loginForm input::placeholder {
     font-size: 16px;
     font-weight: 500;
-} */
+    color: white;
+}
 
 .loginForm button {
     width: 100%;
