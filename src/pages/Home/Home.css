@@ -1,69 +1,124 @@
 .hero {
-    position: relative;
+  position: relative;
 }
 
 .bannerImg {
-    width: 100%;
-    mask-image: linear-gradient(to right, transparent, black 75%);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 75%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
 
 .heroCaption {
-    position: absolute;
-    width: 100%;
-    padding-left: 4%;
-    bottom: 0;
+  position: absolute;
+  width: 100%;
+  padding-left: 4%;
+  bottom: 0;
 }
 
 .captionImg {
-    width: 90%;
-    max-width: 420px;
-    margin-bottom: 30px;
+  width: 90%;
+  max-width: 420px;
+  margin-bottom: 30px;
 }
 
 .heroCaption p {
-    max-width: 700px;
-    font-size: 17px;
-    margin-bottom: 20px;
+  max-width: 700px;
+  font-size: 17px;
+  margin-bottom: 20px;
 }
 
 .heroButtons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 50px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
 }
 
 .button {
-    border: 0;
-    outline: 0;
-    padding: 8px 15px 8px 15px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 15px;
-    font-weight: 600;
-    background: white;
-    border-radius: 4px;
-    cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 8px 15px 8px 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button.darkButton {
-    color: white;
-    background: #6d6d6eb3;
+  color: white;
+  background: #6d6d6eb3;
 }
 
 .button img {
-    width: 25px;
+  width: 25px;
 }
 
 .button:hover {
-    background: #ffffffbf;
+  background: #ffffffbf;
 }
 
 .button.darkButton:hover {
-    background: #6d6d6e66;
+  background: #6d6d6e66;
 }
 
 .moreCards {
+  padding-left: 4%;
+}
+
+@media (max-width: 1024px) {
+  .heroCaption .titleCard {
+    display: none;
+  }
+
+  .captionImg {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+
+  .heroButtons {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .heroCaption {
     padding-left: 4%;
+  }
+
+  .captionImg {
+    margin-bottom: 10px;
+    width: 30%;
+  }
+
+  .heroCaption p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .button img {
+    width: 20px;
+  }
+
+  .moreCards {
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .captionImg {
+    display: none;
+  }
+
+  .button img {
+    width: 15px;
+  }
+
+  .button {
+    padding: 4px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
 }

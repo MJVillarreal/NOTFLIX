@@ -60,11 +60,11 @@ const Player = () => {
         frameBorder="0"
         allowFullScreen
       ></iframe>
-      <div className="playerInfo">
+      {/* <div className="playerInfo">
         <p>{apiData.published_at.slice(0, 10)}</p>
         <p>{apiData.name}</p>
         <p>{apiData.type}</p>
-      </div>
+      </div> */}
     </div>
   );
 };
