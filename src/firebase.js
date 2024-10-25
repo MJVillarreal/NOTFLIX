@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAAyAbweoIeb2QkqTjj5ZxVPJmy9ZiaeHA",
@@ -29,7 +30,7 @@ const signUp = async (name, email, password) => {
         })
     } catch (error) {
         console.log(error);
-        alert(error);
+        toast.error("Email already in use");
     }
 }
 
@@ -39,7 +40,7 @@ const login = async (email, password) => {
         await signInWithEmailAndPassword(auth, email, password);
     } catch (error) {
         console.log(error);
-        alert(error);
+        toast.error("Invalid email or password");
     }
 }
 
