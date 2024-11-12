@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./Login.css";
 import { login, signUp } from "../../firebase";
 
+import Notification from "../../components/Notification/Notification";
+
 import Logo from "../../assets/logo.svg";
 
 const Login = () => {
@@ -11,6 +13,10 @@ const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showNotification, setShowNotification] = useState(true);
+
+  const mockEmail = "test@email.com";
+  const mockPassword = "Test1234";
 
   const userAuth = async (event) => {
     event.preventDefault();
@@ -20,6 +26,10 @@ const Login = () => {
     } else {
       await signUp(name, email, password);
     }
+  };
+
+  const closeNotification = () => {
+    setShowNotification(false);
   };
 
   return (
@@ -99,6 +109,22 @@ const Login = () => {
           )}
         </div>
       </div>
+      {showNotification && (
+        <Notification
+          message={
+            <div>
+              <h4>You can create new credentials or use these:</h4>
+              <p>
+                Email: <strong>{mockEmail}</strong>
+              </p>
+              <p>
+                Password: <strong>{mockPassword}</strong>
+              </p>
+            </div>
+          }
+          onClose={closeNotification}
+        />
+      )}
     </div>
   );
 };

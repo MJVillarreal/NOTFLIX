@@ -11,8 +11,7 @@ const TitleCards = ({ title, category }) => {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhOTlhYmM0MjA0ODQ0ZjNkNDNlY2FiNjBjNmYzY2Y4NiIsIm5iZiI6MTcyOTY2NDM4MS41ODE5NjQsInN1YiI6IjY3MTg5M2MxMjY4NWNiNjU2M2MwNjkyZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CaKIsJ-kHoBGafG_wA7zabxXDbNf3-6lS4N8RVKqRAA",
+      Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhOTlhYmM0MjA0ODQ0ZjNkNDNlY2FiNjBjNmYzY2Y4NiIsIm5iZiI6MTcyOTY2NDM4MS41ODE5NjQsInN1YiI6IjY3MTg5M2MxMjY4NWNiNjU2M2MwNjkyZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CaKIsJ-kHoBGafG_wA7zabxXDbNf3-6lS4N8RVKqRAA"
     },
   };
 
